@@ -32,7 +32,9 @@ Otherwise Google Drive will just redirect downloading it since the library itsel
 
 ### Errors and being outdated
 
-*On cases the library can't handle, the library will return an empty string.*
+*On the cases the fetch fails, say, due to a network blocking, **the error will escalate**!*
+
+*On the cases the library can't handle the response, the library will return an empty string.*
 
 Since the intended usage is directly feeding it to `fetch` - which throws on invalid urls like empty strings,
 you can just `catch` at the end of the promise chain.
