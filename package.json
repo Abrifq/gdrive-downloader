@@ -1,5 +1,5 @@
 {
-  "name": "@abrifq/drive-download-link-getter",
+  "name": "@abrifq/google-drive-downloader",
   "version": "1.1.0",
   "description": "Get direct download link for a PUBLIC google drive file link. Not tested with folders.",
   "main": "index.js",
