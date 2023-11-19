@@ -7,10 +7,10 @@ You can now use the file stored in Google Drive in your program/site -- with the
 
 ## Usage
 
-The library is written as an ES6 module.
+The library is written both as an ES6 module (`index.mjs`) and a CommonJS module (`index.js`).
 
 ```js
-import gDriveDownloader from "gdrive-downloader/index.js";
+import gDriveDownloader from "gdrive-downloader/index.mjs";
 
 const links = {
     catPic: "https://drive.google.com/file/d/totes_real_cat_link/view?usp=share_link"

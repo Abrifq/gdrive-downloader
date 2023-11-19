@@ -26,7 +26,7 @@ const extractRealDownloadLink = confirmationPageContents => decodeURI(confirmDow
  * Tries to get the file id from the file url. See {@link fileIDRegex the file id extractor}.
  * @param {string} fileLink
  */
-function fileIDExtractor(fileLink) { return fileIDRegex.exec(fileLink)?.[1] ?? ""; }
+export function fileIDExtractor(fileLink) { return fileIDRegex.exec(fileLink)?.[1] ?? ""; }
 
 /**
  * Tries to get a download link to the {@link fileLink file}.
@@ -34,14 +34,14 @@ function fileIDExtractor(fileLink) { return fileIDRegex.exec(fileLink)?.[1] ?? "
  *
  * Well, because we are the "anyone" since we are "not logged in".
  */
-async function getFileDownloadLinkFromFileLink(fileLink) {
+export default async function getFileDownloadLinkFromFileLink(fileLink) {
     return getDownloadLinkFromID(fileIDExtractor(fileLink));
 }
 
 /**
  * @param {string} fileID
  */
-async function getDownloadLinkFromID(fileID) {
+export async function getDownloadLinkFromID(fileID) {
     if (typeof fileID !== "string" || fileID.length === 0)
         return "";
 
@@ -63,9 +63,3 @@ async function getDownloadLinkFromID(fileID) {
             return ""
     }
 }
-
-//exports
-module.exports = exports = getFileDownloadLinkFromFileLink;
-exports.default = exports.getFileDownloadLinkFromFileLink = getFileDownloadLinkFromFileLink;
-exports.getDownloadLinkFromID = getDownloadLinkFromID;
-exports.fileIDExtractor = fileIDExtractor;

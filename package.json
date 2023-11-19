@@ -1,0 +1,30 @@
+{
+  "name": "@abrifq/drive-download-link-getter",
+  "version": "1.0.0",
+  "description": "Get direct download link for a PUBLIC google drive file link. Not tested with folders.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abrifq/gdrive-downloader.git"
+  },
+  "keywords": [
+    "google",
+    "drive",
+    "download",
+    "link",
+    "generator"
+  ],
+  "author": "Arda \"Abrifq\" Aydın <2200656005@nku.edu.tr> (https://github.com/Abrifq)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Abrifq/gdrive-downloader/issues"
+  },
+  "homepage": "https://github.com/Abrifq/gdrive-downloader#readme",
+  "files": [
+    "index.js",
+    "index.mjs"
+  ]
+}
