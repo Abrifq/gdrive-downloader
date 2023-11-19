@@ -1,6 +1,6 @@
 {
   "name": "@abrifq/drive-download-link-getter",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Get direct download link for a PUBLIC google drive file link. Not tested with folders.",
   "main": "index.js",
   "scripts": {
